@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Materialize and font awesome css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!--Toastr(NuGet-Install-Package toastr -Version 2.1.1)-->
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+  <title>iOrder</title>
+</head>
+<body>
+    
+    <div class="container center" style="width:500px;">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">iOrder</span>
+                        <div class="row">
+                            <div class="order-form">
+                                <form id="newOrder">
+                                    
+                                    <br />
+                                    <ul id="orderContent" class="list-group"></ul>
+                                    <br />
+    
+                                    <p>
+    
+                                    <p></p>
+                                    <h2 id="price" value="0.0">Price: $0.0</h2>
+                                    <button id="save" type="button" class="btn btn-primary">Sumbit</button>
+                                    <br><br>
+                                    <button class="btn btn black">Clear order</button>
+
+                                    
+                                </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <table id="firstTable" class="table table-bordered table-hover" style="width: 800; margin-left: 50px; margin-right: 100px;">
+        <thead>
+            <tr><td style="background-color:gray;color:white;font-weight:bold">Topli Napici</td></tr>
+            <tr><td>Name</td><td>Price</td><td>Action</td></tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Kafa</td>
+                <td>1.5 $</td>
+                <td><button name="Kafa" value="1.5" data-item-id="1" class="btn btn-primary js-add ">ADD</button></td>
+            </tr>
+            <tr>
+                <td>Caj</td>
+                <td>1.5 $</td>
+                <td><button name="Caj" value="1.5" data-item-id="2" class="btn btn-primary js-add ">ADD</button></td>
+            </tr>
+            <tr>
+                <td>Nesscaffe</td>
+                <td>2 $</td>
+                <td><button name="Nesscaffe" value="2" data-item-id="3" class="btn btn-primary js-add ">ADD</button></td>
+            </tr>
+            <tr>
+                <td>Topla Cokolada</td>
+                <td>2.5 $</td>
+                <td><button name="Topla Cokolada" value="2.5" data-item-id="4" class="btn btn-primary js-add ">ADD</button></td>
+            </tr>
+               
+        </tbody>
+    </table>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  
+  
+  
+  <script src="app.js"></script>
+
+</body>
+</html>
+
