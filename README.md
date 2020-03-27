@@ -1,2 +1,2 @@
 # orderControl
-App that allows user to order item. Data is prepared for ajax api call!
+App that allows user to add items to the bill. Data is prepared for ajax api call!
